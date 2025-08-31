@@ -16,6 +16,17 @@ userId.toFixed()
 // boolean
 let isLoggedIn: boolean = false;
 
+// any 
+// let hero; // let hero: any(equivalent)
+let hero: string;
+
+function getHero() {
+    return "thor"
+}
+
+hero = getHero()
+
+// any -> you can use whenever you don't want a particular value to cause typechecking errors
 
 
 export {};
