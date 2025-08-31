@@ -1,2 +1,6 @@
-Typescript is not about reinventing javascript, It's just the superset which provides 
-Type Safety
+Typescript is not about reinventing javascript, It's just the superset which provides Type Safety
+
+what typescript does: Static checking
+Analyze the code as we type. That's it!
+
+TS is a development tool, our project still runs JS 
