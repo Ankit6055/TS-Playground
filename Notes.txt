@@ -4,3 +4,10 @@ what typescript does: Static checking
 Analyze the code as we type. That's it!
 
 TS is a development tool, our project still runs JS 
+
+Types: Number, String, Boolean, Null, Undefined, Void, Object, Array, Tuples...
+       Any, Never, unknown...
+
+Situations: A function accept 2 numbers, A function returns a string
+
+Syntax: let variableName: type = value; All the types are lowercase in TS 
