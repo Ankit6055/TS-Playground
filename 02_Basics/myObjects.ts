@@ -21,14 +21,56 @@ function createCourse(): {name: string, price: number} {
 
 // Type Aliases
 
+// type User = {
+//     name: string;
+//     email: string;
+//     isActive: boolean
+// }
+
+// function create_User(user: User): User {
+//     return {name: "ankit", email: "a@a.com", isActive: true}
+// }
+
+// create_User({name: "ankit", email: "a@a.com", isActive: true})
+
 type User = {
-    name: string;
-    email: string;
+    readonly _id: string // we won't be able to change it
+    name: string,
+    email: string,
     isActive: boolean
+    credirCardDetails?: number  // ? -> It's means the card is optional
 }
 
-function create_User(user: User): User {
-    return {name: "ankit", email: "a@a.com", isActive: true}
+let myUser: User = {
+    _id: "1234",
+    name: "a",
+    email: "a@a",
+    isActive: true
 }
 
-create_User({name: "ankit", email: "a@a.com", isActive: true})
+myUser.email = "b@b"
+// myUser._id = "1243" -> Not allowed coz its readonly
+
+
+type cardNumber = {
+    cardnumber: string
+}
+
+type cardDate = {
+    carddate: string
+}
+
+type cardDetails = cardNumber & cardDate
+// type cardDetails = cardNumber & cardDate & {
+//     cvv: number
+// }
+
+
+
+
+
+
+
+
+
+export {}
