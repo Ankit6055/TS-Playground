@@ -1,0 +1,2 @@
+Typescript is not about reinventing javascript, It's just the superset which provides 
+Type Safety
